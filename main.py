@@ -18,5 +18,4 @@ for size in sizes:
     plt.ylabel('Número de Baldes')
     plt.title(f'Execução para {size} Elementos')
 
-    plt.show()
     plt.savefig(f'./figures/{size}.png')
