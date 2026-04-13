@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from execute import execute
 
 sizes = [100000, 500000, 1000000]
-buckets = [1, 10, 100, 1000, 10000, 100000, 1000000]
+buckets = [1, 10, 100, 1000, 10000, 100000]
 
 for size in sizes:
     times = []
