@@ -1,4 +1,5 @@
 import sys
+import random
 
 def start_array(size):
     arr = []
@@ -6,8 +7,9 @@ def start_array(size):
         arr.append(i)
     return arr
 
-def shuffle_array():
-    pass
+def shuffle_array(arr):
+    random.shuffle(arr)
+    return arr
 
 def print_erro():
     print('Parâmetros Inválidos!')
@@ -29,4 +31,4 @@ if __name__ == '__main__':
         print_erro()
     
     arr = start_array(size)
-    
+    arr = shuffle_array(arr)
