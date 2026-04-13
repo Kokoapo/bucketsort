@@ -13,8 +13,13 @@ def bucket_sort(arr, n_buckets):
 
     for num in arr:
         bi = int((num/n) * n_buckets)
-        print(bi)
         buckets[bi].append(num)
     
     for bucket in buckets:
-        print(bucket)
+        insertion_sort(bucket)
+    
+    index = 0
+    for bucket in buckets:
+        for num in bucket:
+            arr[index] = num
+            index += 1
