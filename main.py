@@ -10,9 +10,9 @@ for size in sizes:
         final_time = execute(size, bucket)
         times.append(final_time)
         print(f'Tamanho {size} Baldes {bucket} Tempo {final_time}')
-    plt.plot(times, buckets)
+    plt.plot(buckets, times)
 
-    plt.yscale('log')
+    plt.xscale('log')
 
     plt.xlabel('Tempo (Segundos)')
     plt.ylabel('Número de Baldes')
