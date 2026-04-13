@@ -1,3 +1,4 @@
+from bucketsort import bucket_sort
 import sys
 import random
 
@@ -32,3 +33,4 @@ if __name__ == '__main__':
     
     arr = start_array(size)
     arr = shuffle_array(arr)
+    bucket_sort(arr, buckets)
